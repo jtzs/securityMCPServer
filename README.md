@@ -15,7 +15,12 @@ This project acts as a middleware layer between AI models and security tooling, 
 - Language: `Typescript`
 - MCP Framework: [modelcontextprotocol](https://modelcontextprotocol.io)
 - Validator: `ZOD`
-- Security tools: [nmap](https://nmap.org), [amass](https://github.com/owasp-amass/amass)
+- Security tools (Installer not included): [nmap](https://nmap.org)
+
+## Future improvements
+
+- Secret Vault: `HashiCorp Vault`
+- Security Tools: [amass](https://github.com/owasp-amass/amass)
 
 ## 🔧 Usage
 
