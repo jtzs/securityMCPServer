@@ -1,0 +1,10 @@
+{
+    "mcpServers": {
+        "security": {
+            "command": "node",
+            "args": [
+                "./main.ts"
+            ]
+        }
+    }
+}
