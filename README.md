@@ -29,7 +29,7 @@ This project acts as a middleware layer between AI models and security tooling, 
 Installed required security tools
 
 ```bash
-node main.ts
+deno -RNE --allow-run .\main.ts (http/stdio)
 npx @modelcontextprotocol/inspector
 ```
 
@@ -44,3 +44,7 @@ This tool is for **research and educational purposes only**. Always test in isol
 ## 🙋 About the Author
 
 This project is maintained by a cybersecurity professional exploring the intersection of AI and security. I'm learning as I go — feel free to submit pull requests or open issues to help improve this tool!
+
+## References
+
+- https://github.com/securityfortech/secops-mcp

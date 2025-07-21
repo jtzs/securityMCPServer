@@ -3,11 +3,12 @@
     "dev": "deno run --watch main.ts"
   },
   "imports": {
-    "@modelcontextprotocol/sdk": "npm:@modelcontextprotocol/sdk@^1.13.1",
+    "@modelcontextprotocol/sdk": "npm:@modelcontextprotocol/sdk@^1.16.0",
     "@std/assert": "jsr:@std/assert@1",
     "@types/express": "npm:@types/express@^5.0.3",
+    "autoevals": "npm:autoevals@^0.0.130",
     "express": "npm:express@^5.1.0",
-    "zod": "npm:zod@^3.23.8"
+    "zod": "npm:zod@^3.25.76"
   },
   "compilerOptions":{
     "strict": true 
