@@ -5,6 +5,15 @@ import { McpServer } from "npm:@modelcontextprotocol/sdk/server/mcp.js";
 const execAsync = promisify(exec);
 
 export const addTools = (server: McpServer) => {
+  
+  // Add an addition tool
+  server.registerTool("add", {
+    title: "Addition Tool",
+    description: "Add two numbers",
+    inputSchema: { a: z.number(), b: z.number() },
+  }, async ({ a, b }) => ({
+    content: [{ type: "text", text: String(a + b) }],
+  }));
 
   server.tool(
     "nmap-scan-simple",

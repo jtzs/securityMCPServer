@@ -1,6 +1,7 @@
 import express from "npm:express";
 import { randomUUID } from "node:crypto";
 import server from "./src/mcp_server.ts";
+import mcp_server_auth from "./src/mcp_server_auth.ts";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { isInitializeRequest } from "@modelcontextprotocol/sdk/types.js";
@@ -11,6 +12,7 @@ const transport = Deno.args[0];
 if (transport == "http") {
   const app = express();
   app.use(express.json());
+  app.use(mcp_server_auth)
 
   // Map to store transports by session ID
   const transports: { [sessionId: string]: StreamableHTTPServerTransport } = {};
